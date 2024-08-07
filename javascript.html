@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  content="ie=edge"/>
+	  <meta name="description"  content="Learn How to code with html, Css & Javascript. also get to know how to build Android & iOS apps. You will also learn ethical hacking & start working in Big Tech companies"/>
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet"  href="./sass/styles.scss"/>
+    <link rel="icon" type="image/x-icon" href="./images/college-student-3500990__340.jpg"/>
+    <script src="./js/script.js"></script>
+<style>
+  body{font-size: 25px;  background-color: rgb(11, 100, 87); }
+  #head{background-color: rgb(153, 14, 14);
+    color: aliceblue; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 5px;
+   
+  }
+  #head:hover{
+    cursor: pointer;
+  }
+  nav{background-color: rgb(14, 13, 13); text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: aquamarine; padding: 24px 16px; }
+  nav:hover{cursor: pointer; color:rgb(187, 199, 191);}
+  button{background-color: darkgreen; color: white; padding: 8px;} button:hover{cursor: pointer; border-radius: 30px; border: 2px solid salmon;}
+</style>
+</head>
+<body id="body">
+  <h1 id="head" onclick='document.getElementById("head").innerHTML = "Welcome to My Hub"'>Codejury</h1>
+  <nav id="nav1">
+    <a>Navbar</a>
+    <a>Menu</a>
+    <a>Settings</a>
+    <a>Search</a>
+    <a>Login / Sign up</a>
+    <a>Exit</a>
+  </nav>
+  <button type="button" onclick='document.getElementById("nav1").innerHTML = "Nav (hidden)"'>Hello... Click Me or click on codejury! and see the wonders of Engineer GSI</button>
+  <button type="button" onclick="document.getElementById('nav1').style.fontSize='15px'">Change the Nav font Size</button>
+  <button type="button" onclick="document.getElementById('body').style.fontSize='30px'">Change the body font</button>
+  <button type="button" onclick="document.getElementById('nav1').style.display='none'">Hide the Navbar</button>
+  <button type="button" onclick="document.getElementById('nav1').style.display='block'">Show the Navbar</button>
+  <p><img id="img"  src="./images/college-student-3500990__340.jpg" alt="image of a student holding a book in a library"/></p>
+  <button type="button" onclick="document.getElementById('img').style.display='block'">Open the Image</button>
+  <button type="button" onclick="document.getElementById('img').style.display='none'">Hide the Image</button>
+  <button type="button" onclick="window.print()">Print this page</button>
+  <p id="cel" >Celsius</p>
+  <script> document.getElementById("cel").innerHTML = myFirstFunction(77);</script>
+
+
+
+</body>
+</html>
